@@ -185,39 +185,39 @@ class DB {
   }
 
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  // Update the given employee's role
-  setEmployeeRole() {
-    return this.connection.query();
-  }
+  // // Update the given employee's role
+  // setEmployeeRole() {
+  //   return this.connection.query();
+  // }
 
-  // Update the given employee's manager
-  setEmployeeManager() {
-    return this.connection.query();
-  }
+  // // Update the given employee's manager
+  // setEmployeeManager() {
+  //   return this.connection.query();
+  // }
 
-  // Find all roles, join with departments to display the department name
+  // // Find all roles, join with departments to display the department name
 
-  /////////////////////////////////////////////////////////////////////////////////////////////////////
-  createNewRole(role) {
-    return this.connection.query("INSERT INTO employees.role SET ?", role);
-  }
-  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-  // Remove a role from the db
-  removeRole(roleId) {
-    return this.connection.query("DELETE FROM role WHERE id = ?", roleId);
-  }
+  // /////////////////////////////////////////////////////////////////////////////////////////////////////
+  // createNewRole(role) {
+  //   return this.connection.query("INSERT INTO employees.role SET ?", role);
+  // }
+  // ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  // // Remove a role from the db
+  // removeRole(roleId) {
+  //   return this.connection.query("DELETE FROM role WHERE id = ?", roleId);
+  // }
 
   // Find all departments, join with employees and roles and sum up utilized department budget
   // viewEmployeesByDepartment()
 
-  createDepartment(department) {
-    return this.connection.query("INSERT INTO department SET ?", department);
-  }
+  // createDepartment(department) {
+  //   return this.connection.query("INSERT INTO department SET ?", department);
+  // }
 
-  // // Remove a department
-  removeDepartment(department) {
-    return this.connection.query(department);
-  }
+  // // // Remove a department
+  // removeDepartment(department) {
+  //   return this.connection.query(department);
+  // }
   // Find all employees in a given department, join with roles to display role titles
   findAllEmployeesByDepartment(departmentId) {
     return this.connection.query(

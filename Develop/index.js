@@ -36,14 +36,6 @@ async function loadMainPrompts() {
             value: "INSERT_EMPLOYEE"
           },
           {
-            name: "Add Department",
-            value: "INSERT_DEPARTMENT"
-          },
-          {
-            name: "Add Role",
-            value: "INSERT_ROLE"
-          },
-          {
             name: "Remove Employee",
             value: "DELETE_EMPLOYEE"
           },
@@ -70,12 +62,6 @@ async function loadMainPrompts() {
 
         case "INSERT_EMPLOYEE":
           return addNewEmployee();
-
-        case "INSERT_DEPARTMENT":
-          return addNewDepartment();
-
-        case "INSERT_ROLE":
-          return addNewRole();
 
         case "DELETE_EMPLOYEE":
           return removeEmployee();
@@ -152,20 +138,20 @@ async function viewEmployeesByRole() {
 }
 
 /////////////////////////////////////////////////////////////////////////////
-async function addNewRole() {
-  console.log("\n");
-  console.log(createNewDepartment);
+// async function addNewRole() {
+//   console.log("\n");
+//   console.log(createNewDepartment);
 
-  loadMainPrompts();
-}
+//   loadMainPrompts();
+// }
 ////////////////////////////////////////////////////////////////////////////////
-async function addNewDepartment() {
-  const createNewDepartment = await db.createNewDepartment();
-  console.log("\n");
-  console.log(createNewDepartment);
+// async function addNewDepartment() {
+//   const createNewDepartment = await db.createNewDepartment();
+//   console.log("\n");
+//   console.log(createNewDepartment);
 
-  loadMainPrompts();
-}
+//   loadMainPrompts();
+// }
 ////////////////////////////////////////////////////////////////////
 
 // const createNewRole = await db.createNewRole();
